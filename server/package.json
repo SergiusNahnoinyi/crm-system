@@ -11,7 +11,8 @@
     "lint": "eslint ./*.js",
     "lint:fix": "eslint --fix ./*.js",
     "format:check": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write --config ./.prettierrc",
+    "prepare": "cd ../ && husky install ./server/.husky"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +34,12 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3"
+  },
+  "lint-staged": {
+    "*.{js}": "eslint --fix",
+    "*.{js,json,md}": "prettier --write --config ./.prettierrc"
   }
 }
