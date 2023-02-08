@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format:check": "prettier --check .",
-    "format": "prettier --write --config ./.prettierrc",
+    "format": "prettier --write './**/*.{js,md,json}' --config ./.prettierrc",
     "prepare": "cd ../ && husky install ./server/.husky"
   },
   "keywords": [],
@@ -39,6 +39,9 @@
     "prettier": "^2.8.3"
   },
   "lint-staged": {
-    "*.{js,md}": ["eslint --fix", "prettier --write --config ./.prettierrc"]
+    "*.{js,md}": [
+      "eslint --fix",
+      "prettier --write --config ./.prettierrc"
+    ]
   }
 }
