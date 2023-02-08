@@ -15,6 +15,17 @@
     "comma-dangle": ["error", "never"],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/function-component-definition": [
+      1,
+      {
+        "namedComponents": [
+          "function-declaration",
+          "function-expression",
+          "arrow-function"
+        ],
+        "unnamedComponents": ["function-expression", "arrow-function"]
+      }
+    ],
     "no-param-reassign": ["error", { "props": false }],
     "no-unused-vars": "warn",
     "no-unused-expressions": "warn",
