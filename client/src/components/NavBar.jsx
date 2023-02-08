@@ -15,11 +15,13 @@ import {
   SettingsOutlined
 } from "@mui/icons-material";
 
+import PropTypes from "prop-types";
+
 import { setMode } from "../redux/globalSlice";
 
 import FlexBetween from "./FlexBetween";
 
-export default function NavBar() {
+export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
   const dispatch = useDispatch();
   const theme = useTheme();
 
@@ -34,7 +36,7 @@ export default function NavBar() {
       <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* LEFT SIDE */}
         <FlexBetween>
-          <IconButton onClick={() => console.log("open/close")}>
+          <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
             <MenuIcon />
           </IconButton>
           <FlexBetween
@@ -66,3 +68,8 @@ export default function NavBar() {
     </AppBar>
   );
 }
+
+NavBar.propTypes = {
+  isSidebarOpen: PropTypes.bool.isRequired,
+  setIsSidebarOpen: PropTypes.func.isRequired
+};
