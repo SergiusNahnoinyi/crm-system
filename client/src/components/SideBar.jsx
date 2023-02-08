@@ -128,7 +128,7 @@ export default function SideBar({
               })}
             </List>
           </Box>
-          <Box>
+          <Box mb="1rem">
             <Divider />
             <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
               <Box
