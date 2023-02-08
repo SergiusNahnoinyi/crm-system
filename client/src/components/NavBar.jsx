@@ -21,9 +21,11 @@ import { setMode } from "../redux/globalSlice";
 
 import FlexBetween from "./FlexBetween";
 
-export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
+export default function NavBar({ user, isSidebarOpen, setIsSidebarOpen }) {
   const dispatch = useDispatch();
   const theme = useTheme();
+
+  console.log(user);
 
   return (
     <AppBar
@@ -70,6 +72,22 @@ export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
 }
 
 NavBar.propTypes = {
+  user: PropTypes.exact({
+    city: PropTypes.string,
+    country: PropTypes.string,
+    createdAt: PropTypes.string,
+    email: PropTypes.string,
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    password: PropTypes.string,
+    phoneNumber: PropTypes.string,
+    role: PropTypes.string,
+    state: PropTypes.oneOf([null, PropTypes.string]),
+    transactions: PropTypes.arrayOf(PropTypes.string),
+    updatedAt: PropTypes.string,
+    __v: PropTypes.number,
+    _id: PropTypes.string
+  }).isRequired,
   isSidebarOpen: PropTypes.bool.isRequired,
   setIsSidebarOpen: PropTypes.func.isRequired
 };
