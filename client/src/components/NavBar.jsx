@@ -1,10 +1,16 @@
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 
 import {
   AppBar,
+  Button,
+  Box,
+  Typography,
   IconButton,
   InputBase,
   Toolbar,
+  Menu,
+  MenuItem,
   useTheme
 } from "@mui/material";
 import {
@@ -12,7 +18,8 @@ import {
   DarkModeOutlined,
   Menu as MenuIcon,
   Search,
-  SettingsOutlined
+  SettingsOutlined,
+  ArrowDropDownOutlined
 } from "@mui/icons-material";
 
 import PropTypes from "prop-types";
@@ -21,9 +28,17 @@ import { setMode } from "../redux/globalSlice";
 
 import FlexBetween from "./FlexBetween";
 
-export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
+import profileImage from "../assets/image.png";
+
+export default function NavBar({ user, isSidebarOpen, setIsSidebarOpen }) {
+  const [anchorEl, setAnchorEl] = useState(null);
+
   const dispatch = useDispatch();
   const theme = useTheme();
+  const isOpen = Boolean(anchorEl);
+
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
 
   return (
     <AppBar
@@ -51,6 +66,7 @@ export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
             </IconButton>
           </FlexBetween>
         </FlexBetween>
+
         {/* RIGHT SIDE */}
         <FlexBetween gap="1.5rem">
           <IconButton onClick={() => dispatch(setMode())}>
@@ -63,6 +79,55 @@ export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
           <IconButton>
             <SettingsOutlined sx={{ fontSize: "25px" }} />
           </IconButton>
+
+          <FlexBetween>
+            <Button
+              onClick={handleClick}
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                textTransform: "none",
+                gap: "1rem"
+              }}
+            >
+              <Box
+                component="img"
+                alt="profile"
+                src={profileImage}
+                height="32px"
+                width="32px"
+                borderRadius="50%"
+                sx={{ objectFit: "cover" }}
+              />
+              <Box textAlign="left">
+                <Typography
+                  fontWeight="bold"
+                  fontSize="0.85rem"
+                  sx={{ color: theme.palette.secondary[100] }}
+                >
+                  {user.name}
+                </Typography>
+                <Typography
+                  fontSize="0.75rem"
+                  sx={{ color: theme.palette.secondary[200] }}
+                >
+                  {user.occupation}
+                </Typography>
+              </Box>
+              <ArrowDropDownOutlined
+                sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
+              />
+            </Button>
+            <Menu
+              anchorEl={anchorEl}
+              open={isOpen}
+              onClose={handleClose}
+              anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+              <MenuItem onClick={handleClose}>Log Out</MenuItem>
+            </Menu>
+          </FlexBetween>
         </FlexBetween>
       </Toolbar>
     </AppBar>
@@ -70,6 +135,22 @@ export default function NavBar({ isSidebarOpen, setIsSidebarOpen }) {
 }
 
 NavBar.propTypes = {
+  user: PropTypes.exact({
+    city: PropTypes.string,
+    country: PropTypes.string,
+    createdAt: PropTypes.string,
+    email: PropTypes.string,
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    password: PropTypes.string,
+    phoneNumber: PropTypes.string,
+    role: PropTypes.string,
+    state: PropTypes.oneOf([null, PropTypes.string]),
+    transactions: PropTypes.arrayOf(PropTypes.string),
+    updatedAt: PropTypes.string,
+    __v: PropTypes.number,
+    _id: PropTypes.string
+  }).isRequired,
   isSidebarOpen: PropTypes.bool.isRequired,
   setIsSidebarOpen: PropTypes.func.isRequired
 };

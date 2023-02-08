@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import {
   Box,
+  Divider,
   Drawer,
   IconButton,
   List,
@@ -13,15 +14,21 @@ import {
   Typography,
   useTheme
 } from "@mui/material";
-import { ChevronLeft, ChevronRightOutlined } from "@mui/icons-material";
+import {
+  SettingsOutlined,
+  ChevronLeft,
+  ChevronRightOutlined
+} from "@mui/icons-material";
 
 import PropTypes from "prop-types";
 
 import FlexBetween from "./FlexBetween";
 
+import profileImage from "../assets/image.png";
 import navItems from "../constants/navItems";
 
 export default function SideBar({
+  user,
   drawerWidth,
   isSidebarOpen,
   setIsSidebarOpen,
@@ -121,6 +128,41 @@ export default function SideBar({
               })}
             </List>
           </Box>
+          <Box mb="1rem">
+            <Divider />
+            <FlexBetween textTransform="none" gap="1rem" m="1.5rem 2rem 0 3rem">
+              <Box
+                component="img"
+                alt="profile"
+                src={profileImage}
+                height="40px"
+                width="40px"
+                borderRadius="50%"
+                sx={{ objectFit: "cover" }}
+              />
+              <Box textAlign="left">
+                <Typography
+                  fontWeight="bold"
+                  fontSize="0.9rem"
+                  sx={{ color: theme.palette.secondary[100] }}
+                >
+                  {user.name}
+                </Typography>
+                <Typography
+                  fontSize="0.8rem"
+                  sx={{ color: theme.palette.secondary[200] }}
+                >
+                  {user.occupation}
+                </Typography>
+              </Box>
+              <SettingsOutlined
+                sx={{
+                  color: theme.palette.secondary[300],
+                  fontSize: "25px "
+                }}
+              />
+            </FlexBetween>
+          </Box>
         </Drawer>
       )}
     </Box>
@@ -128,6 +170,22 @@ export default function SideBar({
 }
 
 SideBar.propTypes = {
+  user: PropTypes.exact({
+    city: PropTypes.string,
+    country: PropTypes.string,
+    createdAt: PropTypes.string,
+    email: PropTypes.string,
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    password: PropTypes.string,
+    phoneNumber: PropTypes.string,
+    role: PropTypes.string,
+    state: PropTypes.oneOf([null, PropTypes.string]),
+    transactions: PropTypes.arrayOf(PropTypes.string),
+    updatedAt: PropTypes.string,
+    __v: PropTypes.number,
+    _id: PropTypes.string
+  }).isRequired,
   drawerWidth: PropTypes.string.isRequired,
   isSidebarOpen: PropTypes.bool.isRequired,
   setIsSidebarOpen: PropTypes.func.isRequired,
