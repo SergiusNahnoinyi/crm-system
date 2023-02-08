@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format:check": "prettier --check .",
-    "format": "prettier --write './**/*.{js,md,json}' --config ./.prettierrc",
+    "format": "prettier --write .",
     "prepare": "cd ../ && husky install ./server/.husky"
   },
   "keywords": [],
