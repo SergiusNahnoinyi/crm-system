@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 
 import Layout from "./pages/Layout";
 import Dashboard from "./pages/Dashboard";
+import Products from "./pages/Products";
 
 import { themeSettings } from "./theme";
 
@@ -23,6 +24,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/products" element={<Products />} />
           </Route>
         </Routes>
       </ThemeProvider>
