@@ -2,7 +2,7 @@ import { Typography, Box, useTheme } from "@mui/material";
 
 import PropTypes from "prop-types";
 
-export default function Header({ title, subtitle }) {
+export default function Heading({ title, subtitle }) {
   const theme = useTheme();
   return (
     <Box>
@@ -21,7 +21,7 @@ export default function Header({ title, subtitle }) {
   );
 }
 
-Header.propTypes = {
+Heading.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired
 };
