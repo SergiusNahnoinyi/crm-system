@@ -45,7 +45,7 @@ export default function Customers() {
       >
         <DataGrid
           loading={isLoading || !data}
-          getRowId={(row) => row.phoneNumber}
+          getRowId={(row) => row._id}
           rows={data || []}
           columns={columns}
         />
