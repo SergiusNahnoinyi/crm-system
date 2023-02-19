@@ -16,6 +16,7 @@
     "no-param-reassign": ["error", { "props": false }],
     "no-unused-vars": "warn",
     "no-unused-expressions": "warn",
+    "no-underscore-dangle": "off",
     "no-console": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
