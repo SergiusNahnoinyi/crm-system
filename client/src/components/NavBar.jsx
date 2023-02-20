@@ -28,7 +28,7 @@ import { setMode } from "../redux/globalSlice";
 
 import FlexBetween from "./FlexBetween";
 
-import profileImage from "../assets/image.png";
+import profileImage from "../assets/image.jpeg";
 
 export default function NavBar({ user, isSidebarOpen, setIsSidebarOpen }) {
   const [anchorEl, setAnchorEl] = useState(null);

@@ -24,7 +24,7 @@ import PropTypes from "prop-types";
 
 import FlexBetween from "./FlexBetween";
 
-import profileImage from "../assets/image.png";
+import profileImage from "../assets/image.jpeg";
 import navItems from "../constants/navItems";
 
 export default function SideBar({
