@@ -17645,19 +17645,6 @@ export const dataUser = [
     role: "admin"
   },
   {
-    _id: "63701cc1f03239867500011d",
-    name: "Ruddie",
-    email: "rradolfh@webeden.co.uk",
-    password: "Fo6oBx",
-    city: "Onega",
-    state: null,
-    country: "RU",
-    occupation: "Health Coach I",
-    phoneNumber: "8958889697",
-    transactions: ["63701d74f0323944410002fc"],
-    role: "user"
-  },
-  {
     _id: "63701cc1f03239867500011e",
     name: "Marsiella",
     email: "mduckiti@cyberchimps.com",
@@ -17686,47 +17673,6 @@ export const dataUser = [
       "63701d74f03239db69000141",
       "63701d74f032395b3300014f",
       "63701d74f032394441000318"
-    ],
-    role: "admin"
-  },
-  {
-    _id: "63701cc1f032398675000120",
-    name: "Annora",
-    email: "aezzellk@dell.com",
-    password: "r4BBJbD",
-    city: "Asino",
-    state: null,
-    country: "RU",
-    occupation: "Compensation Analyst",
-    phoneNumber: "8057932279",
-    transactions: [
-      "63701d74f032394441000317",
-      "63701d74f03239f09e0001a5",
-      "63701d74f032394441000313",
-      "63701d74f03239867500013e"
-    ],
-    role: "superadmin"
-  },
-  {
-    _id: "63701cc1f032398675000121",
-    name: "Donnie",
-    email: "dwhyel@icio.us",
-    password: "PUX9ly",
-    city: "Sofrino",
-    state: null,
-    country: "RU",
-    occupation: "Legal Assistant",
-    phoneNumber: "9871632129",
-    transactions: [
-      "63701d74f03239d40b000064",
-      "63701d74f03239f09e000194",
-      "63701d74f03239d59100034d",
-      "63701d74f032395b3300013a",
-      "63701d74f03239cdc500002f",
-      "63701d74f032399c00000141",
-      "63701d74f03239b7f7000041",
-      "63701d74f032390a34000348",
-      "63701d74f03239bef0000153"
     ],
     role: "admin"
   },
@@ -17783,30 +17729,6 @@ export const dataUser = [
       "63701d74f032394441000303"
     ],
     role: "user"
-  },
-  {
-    _id: "63701cc1f032398675000125",
-    name: "Dacey",
-    email: "domohunp@youku.com",
-    password: "c9DQGaI",
-    city: "Solntsevo",
-    state: null,
-    country: "RU",
-    occupation: "VP Accounting",
-    phoneNumber: "3653765798",
-    transactions: [
-      "63701d74f03239d40b000080",
-      "63701d74f032390a3400034d",
-      "63701d74f03239c72c0001a0",
-      "63701d74f03239b7f7000039",
-      "63701d74f032396b8e000041",
-      "63701d74f03239c72c000196",
-      "63701d74f03239db69000148",
-      "63701d74f03239db6900014d",
-      "63701d74f03239d81e000027",
-      "63701d74f032395694000045"
-    ],
-    role: "superadmin"
   },
   {
     _id: "63701cc1f032398675000126",
@@ -18061,24 +17983,6 @@ export const dataUser = [
     role: "superadmin"
   },
   {
-    _id: "63701cc1f03239b7f700000f",
-    name: "Amil",
-    email: "aweben13@feedburner.com",
-    password: "GpOhlbh0G",
-    city: "Primorskiy",
-    state: null,
-    country: "RU",
-    occupation: "Administrative Officer",
-    phoneNumber: "4707334512",
-    transactions: [
-      "63701d74f03239bef0000133",
-      "63701d74f032396b8e00003c",
-      "63701d74f0323986f3000156",
-      "63701d74f03239d591000334"
-    ],
-    role: "superadmin"
-  },
-  {
     _id: "63701cc1f03239b7f7000010",
     name: "Hugh",
     email: "hainscow14@themeforest.net",
@@ -18152,50 +18056,6 @@ export const dataUser = [
       "63701d74f03239db69000145"
     ],
     role: "admin"
-  },
-  {
-    _id: "63701cc1f03239b7f7000014",
-    name: "Yardley",
-    email: "yrestieaux18@google.com.hk",
-    password: "6HDQYk",
-    city: "Kirovsk",
-    state: null,
-    country: "RU",
-    occupation: "Office Assistant III",
-    phoneNumber: "2634455004",
-    transactions: [
-      "63701d74f0323944410002f8",
-      "63701d74f03239569400001e",
-      "63701d74f032395b33000138",
-      "63701d74f03239d40b00007e",
-      "63701d74f03239444100031d",
-      "63701d74f03239b913000036",
-      "63701d74f032396b8e000029",
-      "63701d74f03239f09e00019f",
-      "63701d74f03239528f00001b"
-    ],
-    role: "user"
-  },
-  {
-    _id: "63701cc1f0323944410002dd",
-    name: "Micheline",
-    email: "mbarajaz19@nhs.uk",
-    password: "tPQCVZTA",
-    city: "Krasnyy Luch",
-    state: null,
-    country: "UA",
-    occupation: "Tax Accountant",
-    phoneNumber: "5491175476",
-    transactions: [
-      "63701d74f03239c72c0001be",
-      "63701d74f03239f09e0001b6",
-      "63701d74f03239db69000130",
-      "63701d74f032394441000300",
-      "63701d74f032394441000309",
-      "63701d74f03239d40b000067",
-      "63701d74f03239b91300002f"
-    ],
-    role: "user"
   },
   {
     _id: "63701cc1f0323944410002de",
@@ -18622,50 +18482,6 @@ export const dataUser = [
     role: "user"
   },
   {
-    _id: "63701cc1f03239d81e00000e",
-    name: "Berenice",
-    email: "bpedgrift1w@europa.eu",
-    password: "KwHuinZ1EKM",
-    city: "Kusak",
-    state: null,
-    country: "RU",
-    occupation: "Budget/Accounting Analyst I",
-    phoneNumber: "3533101907",
-    transactions: [
-      "63701d74f03239db69000130",
-      "63701d74f03239b7f700001a",
-      "63701d74f032396b8e000021",
-      "63701d74f032394c49000147",
-      "63701d74f03239f09e0001a3",
-      "63701d74f03239db69000141",
-      "63701d74f03239d59100032e"
-    ],
-    role: "superadmin"
-  },
-  {
-    _id: "63701cc1f03239d81e00000f",
-    name: "Juan",
-    email: "jtyre1x@biblegateway.com",
-    password: "1SzKUUzdFZ0x",
-    city: "Orleans",
-    state: null,
-    country: "BR",
-    occupation: "Civil Engineer",
-    phoneNumber: "3529096801",
-    transactions: [
-      "63701d74f03239569400001a",
-      "63701d74f03239d40b000067",
-      "63701d74f032399c0000013b",
-      "63701d74f032395b33000157",
-      "63701d74f03239528f000043",
-      "63701d74f0323986f300013c",
-      "63701d74f032398675000138",
-      "63701d74f032390a34000332",
-      "63701d74f032394c49000132"
-    ],
-    role: "admin"
-  },
-  {
     _id: "63701cc1f03239d81e000010",
     name: "Dael",
     email: "dheaton1y@php.net",
@@ -18884,26 +18700,6 @@ export const dataUser = [
     role: "user"
   },
   {
-    _id: "63701cc1f032390a34000320",
-    name: "Raviv",
-    email: "rbarbour2b@amazon.co.jp",
-    password: "evZ8FG",
-    city: "Mayrtup",
-    state: null,
-    country: "RU",
-    occupation: "Technical Writer",
-    phoneNumber: "3701230076",
-    transactions: [
-      "63701d74f03239db69000147",
-      "63701d74f032394c4900014e",
-      "63701d74f03239d59100034a",
-      "63701d74f03239d59100034f",
-      "63701d74f03239f09e0001ab",
-      "63701d74f0323986f300013e"
-    ],
-    role: "user"
-  },
-  {
     _id: "63701cc1f032390a34000321",
     name: "Bailey",
     email: "btremblett2c@census.gov",
@@ -19080,19 +18876,6 @@ export const dataUser = [
     phoneNumber: "3121990932",
     transactions: ["63701d74f03239bef0000158", "63701d74f03239cdc500001f"],
     role: "user"
-  },
-  {
-    _id: "63701cc1f032395b3300011f",
-    name: "June",
-    email: "jhornig2m@webnode.com",
-    password: "VKK2BM",
-    city: "Lukhovka",
-    state: null,
-    country: "RU",
-    occupation: "Safety Technician II",
-    phoneNumber: "6898002758",
-    transactions: ["63701d74f03239c72c0001ba", "63701d74f032395694000037"],
-    role: "superadmin"
   },
   {
     _id: "63701cc1f032395b33000120",
@@ -19309,24 +19092,6 @@ export const dataUser = [
     role: "admin"
   },
   {
-    _id: "63701cc1f03239d591000319",
-    name: "Nicholle",
-    email: "nducarel2y@sourceforge.net",
-    password: "Xto6DJlbDQW",
-    city: "Ryazan’",
-    state: null,
-    country: "RU",
-    occupation: "Safety Technician IV",
-    phoneNumber: "1356228398",
-    transactions: [
-      "63701d74f03239d40b00008f",
-      "63701d74f03239c72c00019a",
-      "63701d74f032390a3400033d",
-      "63701d74f03239bef0000140"
-    ],
-    role: "superadmin"
-  },
-  {
     _id: "63701cc1f03239d59100031a",
     name: "Trista",
     email: "tponter2z@dailymail.co.uk",
@@ -19365,26 +19130,6 @@ export const dataUser = [
       "63701d74f03239528f00001c"
     ],
     role: "superadmin"
-  },
-  {
-    _id: "63701cc1f03239d59100031c",
-    name: "Rickert",
-    email: "rliggins31@photobucket.com",
-    password: "3QDXzlM77H0N",
-    city: "Salavat",
-    state: null,
-    country: "RU",
-    occupation: "Research Nurse",
-    phoneNumber: "1041333724",
-    transactions: [
-      "63701d74f03239b913000038",
-      "63701d74f03239f09e000193",
-      "63701d74f03239d81e00003c",
-      "63701d74f032395b33000158",
-      "63701d74f032399c0000013f",
-      "63701d74f03239bef0000131"
-    ],
-    role: "user"
   },
   {
     _id: "63701cc1f03239d59100031d",
@@ -19941,29 +19686,6 @@ export const dataUser = [
       "63701d74f03239bef0000141",
       "63701d74f03239d81e00001c",
       "63701d74f032399c00000130"
-    ],
-    role: "superadmin"
-  },
-  {
-    _id: "63701cc1f032396b8e00000a",
-    name: "Salvador",
-    email: "sspinelli3v@icq.com",
-    password: "sR3JsfGn",
-    city: "Yelets",
-    state: null,
-    country: "RU",
-    occupation: "Software Engineer II",
-    phoneNumber: "8921442343",
-    transactions: [
-      "63701d74f03239b913000044",
-      "63701d74f03239b7f7000046",
-      "63701d74f03239f09e0001b1",
-      "63701d74f032394c4900014a",
-      "63701d74f03239b7f7000039",
-      "63701d74f032395b33000141",
-      "63701d74f03239cdc5000044",
-      "63701d74f032396b8e000029",
-      "63701d74f03239444100030c"
     ],
     role: "superadmin"
   },
@@ -20626,29 +20348,6 @@ export const dataUser = [
     role: "superadmin"
   },
   {
-    _id: "63701cc1f032394c49000123",
-    name: "Stanislaw",
-    email: "smeese4t@dot.gov",
-    password: "CnrcjaTecsWg",
-    city: "Pyatovskiy",
-    state: null,
-    country: "RU",
-    occupation: "Desktop Support Technician",
-    phoneNumber: "2856031437",
-    transactions: [
-      "63701d74f03239d81e000023",
-      "63701d74f03239d81e000024",
-      "63701d74f032399c00000141",
-      "63701d74f0323986f3000144",
-      "63701d74f032394c4900014f",
-      "63701d74f03239d81e000039",
-      "63701d74f03239528f000024",
-      "63701d74f032394c49000135",
-      "63701d74f03239d591000331"
-    ],
-    role: "superadmin"
-  },
-  {
     _id: "63701cc1f032394c49000124",
     name: "Cassius",
     email: "ccardiff4u@si.edu",
@@ -20874,19 +20573,6 @@ export const dataUser = [
     role: "superadmin"
   },
   {
-    _id: "63701cc1f03239528f00000d",
-    name: "Zora",
-    email: "zfratczak57@mail.ru",
-    password: "VGPlFF",
-    city: "Troitsk",
-    state: null,
-    country: "RU",
-    occupation: "Structural Engineer",
-    phoneNumber: "5823912564",
-    transactions: ["63701d74f032396b8e000031", "63701d74f032399c0000014f"],
-    role: "admin"
-  },
-  {
     _id: "63701cc1f03239528f00000e",
     name: "Connor",
     email: "cmonget58@technorati.com",
@@ -20991,46 +20677,6 @@ export const dataUser = [
     role: "user"
   },
   {
-    _id: "63701cc1f03239528f000013",
-    name: "Leilah",
-    email: "lcrosse5d@google.com.hk",
-    password: "sfFhchYqoJ6",
-    city: "Turochak",
-    state: null,
-    country: "RU",
-    occupation: "Information Systems Manager",
-    phoneNumber: "2028158686",
-    transactions: [
-      "63701d74f03239bef000014b",
-      "63701d74f032396b8e000026",
-      "63701d74f032394c49000131"
-    ],
-    role: "user"
-  },
-  {
-    _id: "63701cc1f03239528f000014",
-    name: "Finley",
-    email: "fgrieger5e@wikimedia.org",
-    password: "azQNkwXmsfFl",
-    city: "Yaroslavl",
-    state: null,
-    country: "RU",
-    occupation: "Budget/Accounting Analyst III",
-    phoneNumber: "6172153852",
-    transactions: [
-      "63701d74f03239528f00002f",
-      "63701d74f03239c72c00019d",
-      "63701d74f03239b7f700001f",
-      "63701d74f03239444100030d",
-      "63701d74f03239d81e000043",
-      "63701d74f0323986f300014f",
-      "63701d74f03239528f00001e",
-      "63701d74f03239c72c0001b1",
-      "63701d74f032394c49000136"
-    ],
-    role: "user"
-  },
-  {
     _id: "63701cc1f03239f09e00017f",
     name: "Leda",
     email: "lemery5f@xrea.com",
@@ -21121,45 +20767,6 @@ export const dataUser = [
       "63701d74f03239bef000013a",
       "63701d74f032390a3400034a",
       "63701d74f032396b8e000032"
-    ],
-    role: "superadmin"
-  },
-  {
-    _id: "63701cc1f03239f09e000184",
-    name: "Jenda",
-    email: "jcromarty5k@infoseek.co.jp",
-    password: "J0CkgoQfCAG",
-    city: "Kupchino",
-    state: null,
-    country: "RU",
-    occupation: "Engineer II",
-    phoneNumber: "5133052964",
-    transactions: [
-      "63701d74f0323986f3000139",
-      "63701d74f032396b8e000027",
-      "63701d74f03239db69000146",
-      "63701d74f03239d591000332",
-      "63701d74f032395b33000145",
-      "63701d74f03239528f000021",
-      "63701d74f03239b7f7000025",
-      "63701d74f032395b3300013c"
-    ],
-    role: "user"
-  },
-  {
-    _id: "63701cc1f03239f09e000185",
-    name: "Wenda",
-    email: "wespinheira5l@bluehost.com",
-    password: "ZsEWOWTsBd",
-    city: "Rublëvo",
-    state: null,
-    country: "RU",
-    occupation: "Budget/Accounting Analyst IV",
-    phoneNumber: "7532752819",
-    transactions: [
-      "63701d74f03239c72c000199",
-      "63701d74f032395b3300012f",
-      "63701d74f032395694000043"
     ],
     role: "superadmin"
   },
@@ -21540,30 +21147,6 @@ export const dataUser = [
     role: "superadmin"
   },
   {
-    _id: "63701cc1f03239db69000127",
-    name: "Othilie",
-    email: "oemmott66@indiatimes.com",
-    password: "i4f5UE",
-    city: "Khiv",
-    state: null,
-    country: "RU",
-    occupation: "Human Resources Manager",
-    phoneNumber: "1742030156",
-    transactions: [
-      "63701d74f0323944410002f5",
-      "63701d74f032396b8e000020",
-      "63701d74f03239d81e00001f",
-      "63701d74f03239c72c0001ba",
-      "63701d74f03239d81e000028",
-      "63701d74f0323986f300013f",
-      "63701d74f03239d40b00007c",
-      "63701d74f03239cdc500003c",
-      "63701d74f03239db69000159",
-      "63701d74f03239528f00002a"
-    ],
-    role: "admin"
-  },
-  {
     _id: "63701cc1f03239db69000128",
     name: "Gabriela",
     email: "gpretty67@prnewswire.com",
@@ -21847,49 +21430,6 @@ export const dataUser = [
     role: "user"
   },
   {
-    _id: "63701cc1f03239b913000013",
-    name: "Honor",
-    email: "hridoutt6m@networksolutions.com",
-    password: "5I2Pe8",
-    city: "Tyazhinskiy",
-    state: null,
-    country: "RU",
-    occupation: "Environmental Specialist",
-    phoneNumber: "8971477869",
-    transactions: [
-      "63701d74f0323986f300013e",
-      "63701d74f0323944410002fb",
-      "63701d74f03239b7f7000027",
-      "63701d74f03239d59100032d",
-      "63701d74f03239d40b000088"
-    ],
-    role: "admin"
-  },
-  {
-    _id: "63701cc1f03239b913000014",
-    name: "Daffy",
-    email: "dveltmann6n@t-online.de",
-    password: "DBQMiS0fN",
-    city: "Karata",
-    state: null,
-    country: "RU",
-    occupation: "Recruiting Manager",
-    phoneNumber: "5344323867",
-    transactions: [
-      "63701d74f03239d591000344",
-      "63701d74f032398675000143",
-      "63701d74f032390a34000335",
-      "63701d74f03239528f000031",
-      "63701d74f03239db6900014d",
-      "63701d74f03239bef000014c",
-      "63701d74f03239b7f7000046",
-      "63701d74f03239bef0000145",
-      "63701d74f032395b3300013a",
-      "63701d74f03239d591000333"
-    ],
-    role: "superadmin"
-  },
-  {
     _id: "63701cc1f03239cdc5000006",
     name: "Rachael",
     email: "rgoddman6o@mlb.com",
@@ -21918,43 +21458,6 @@ export const dataUser = [
     phoneNumber: "4314563977",
     transactions: ["63701d74f032399c0000012f", "63701d74f032390a34000350"],
     role: "user"
-  },
-  {
-    _id: "63701cc1f03239cdc5000008",
-    name: "Jecho",
-    email: "jgolthorpp6q@quantcast.com",
-    password: "6NqJWNf",
-    city: "Krasnogvardeyets",
-    state: null,
-    country: "RU",
-    occupation: "Financial Analyst",
-    phoneNumber: "5978225150",
-    transactions: [
-      "63701d74f032396b8e000031",
-      "63701d74f0323944410002f6",
-      "63701d74f03239f09e0001a3",
-      "63701d74f032399c0000015b",
-      "63701d74f03239569400001f",
-      "63701d74f03239c72c0001b9"
-    ],
-    role: "user"
-  },
-  {
-    _id: "63701cc1f03239cdc5000009",
-    name: "Shanda",
-    email: "spumfrett6r@skyrock.com",
-    password: "qwjl5mvTIUA",
-    city: "Paratunka",
-    state: null,
-    country: "RU",
-    occupation: "Senior Developer",
-    phoneNumber: "8132295154",
-    transactions: [
-      "63701d74f03239cdc5000031",
-      "63701d74f032398675000157",
-      "63701d74f03239528f00003e"
-    ],
-    role: "admin"
   },
   {
     _id: "63701cc1f03239cdc500000a",
@@ -22653,23 +22156,6 @@ export const dataUser = [
       "63701d74f032398675000134"
     ],
     role: "admin"
-  },
-  {
-    _id: "63701cc1f0323986f3000126",
-    name: "Addi",
-    email: "ablazej7t@archive.org",
-    password: "PNPXoHyZghJw",
-    city: "Golovinskiy",
-    state: null,
-    country: "RU",
-    occupation: "Data Coordiator",
-    phoneNumber: "4132071143",
-    transactions: [
-      "63701d74f032398675000157",
-      "63701d74f032396b8e000046",
-      "63701d74f03239569400001d"
-    ],
-    role: "user"
   },
   {
     _id: "63701cc1f0323986f3000127",
