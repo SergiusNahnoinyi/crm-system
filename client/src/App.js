@@ -14,6 +14,7 @@ const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Products = lazy(() => import("./pages/Products"));
 const Customers = lazy(() => import("./pages/Customers"));
 const Transactions = lazy(() => import("./pages/Transactions"));
+const Geography = lazy(() => import("./pages/Geography"));
 
 export default function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -31,6 +32,7 @@ export default function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/customers" element={<Customers />} />
               <Route path="/transactions" element={<Transactions />} />
+              <Route path="/geography" element={<Geography />} />
             </Route>
           </Routes>
         </Suspense>
