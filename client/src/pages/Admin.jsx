@@ -1,19 +1,20 @@
 import { Box, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 
-import { useGetCustomersQuery } from "../redux/api";
+import { useGetAdminsQuery } from "../redux/api";
 
 import Heading from "../components/Heading";
+import CustomColumnMenu from "../components/DataGridCustomColumnMenu";
 
-import columns from "../constants/customersColumns";
+import columns from "../constants/adminsColumns";
 
-export default function Customers() {
+export default function Admin() {
   const theme = useTheme();
-  const { data, isLoading } = useGetCustomersQuery();
+  const { data, isLoading } = useGetAdminsQuery();
 
   return (
     <Box m="1.5rem 2.5rem">
-      <Heading title="CUSTOMERS" subtitle="List of Customers" />
+      <Heading title="ADMINS" subtitle="Managing admins and list of admins" />
       <Box
         mt="40px"
         height="75vh"
@@ -24,7 +25,7 @@ export default function Customers() {
           "& .MuiDataGrid-cell": {
             borderBottom: "none"
           },
-          "& .MuiDataGrid-columnHeadings": {
+          "& .MuiDataGrid-columnHeaders": {
             backgroundColor: theme.palette.background.alt,
             color: theme.palette.secondary[100],
             borderBottom: "none"
@@ -47,6 +48,9 @@ export default function Customers() {
           getRowId={(row) => row._id}
           rows={data || []}
           columns={columns}
+          components={{
+            ColumnMenu: CustomColumnMenu
+          }}
         />
       </Box>
     </Box>
