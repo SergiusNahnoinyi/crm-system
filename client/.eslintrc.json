@@ -20,6 +20,7 @@
     "no-console": "off",
     "no-shadow": "off",
     "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/function-component-definition": [
       1,
