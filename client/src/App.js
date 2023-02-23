@@ -20,6 +20,7 @@ const Daily = lazy(() => import("./pages/Daily"));
 const Monthly = lazy(() => import("./pages/Monthly"));
 const Breakdown = lazy(() => import("./pages/Breakdown"));
 const Admin = lazy(() => import("./pages/Admin"));
+const Performance = lazy(() => import("./pages/Performance"));
 
 export default function App() {
   const mode = useSelector((state) => state.global.mode);
@@ -43,6 +44,7 @@ export default function App() {
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown />} />
               <Route path="/admin" element={<Admin />} />
+              <Route path="/performance" element={<Performance />} />
             </Route>
           </Routes>
         </Suspense>
